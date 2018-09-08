@@ -10,6 +10,6 @@ Registrants will be able to enter their personal information and select a course
 - Save user input into database
 
 ## How-to
-- Upload database schema in Documentation folder
-- Edit database info in studentForm.py and studentFormSubmit.py
-- Run studentForm.py in the browser
+1. Upload database schema in Documentation folder
+2. Edit database info in studentForm.py and studentFormSubmit.py
+3. Run studentForm.py in the browser
