@@ -8,3 +8,8 @@ Registrants will be able to enter their personal information and select a course
 ## Project requirements
 - Load dropdown menu with database
 - Save user input into database
+
+## How-to
+- Upload database schema in Documentation folder
+- Edit database info in studentForm.py and studentFormSubmit.py
+- Run studentForm.py in the browser
