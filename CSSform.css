@@ -1,0 +1,76 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Righteous', cursive;
+}
+
+body{
+	background-color: /*#044F67*/ /*#C91F37*/#FFDE41; /*Yellow*/
+}
+
+h1{
+	text-align: center;
+	margin: 10px auto 5% auto;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+
+#page{ /*Centering Form*/
+	width: 50vw;
+	min-height: 80vh;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: /*#F2F1EF*/#FFFCF0; /*Grey*/
+	border: 3px solid #302800;
+}
+
+.inputs{
+	margin-bottom: 20px;
+	display:flex;
+}
+
+.inputs > p{
+	width: 20%;
+}
+
+.resAddress{
+	width:50%;
+}
+
+.radio-text{
+	margin-right: 2px;
+}
+
+.radio2-spacing{
+	margin-left: 15px;
+}
+
+.btns{
+	justify-content: center;
+}
+
+.btn{
+    background-color: #FFDE41; /*Same as background*/
+	color: #302800; /*Off black*/
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15%;
+    margin-right:5px;
+}
+
+.warnOn{ /*For invalid inputs*/
+	color: #EF3948;
+	margin-left: 2px;
+}
+.warnOff{ /*To hide warning message*/
+	visibility: hidden;
+	margin-left: 2px;
+}

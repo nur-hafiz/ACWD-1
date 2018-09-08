@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<title>School Application</title>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="CSSform.css">
+<script type="text/javascript" src="JSform.js"></script>
+</head>
+
+<body>
+<div id="page"><!--Centering page-->
+<h1>Registration Form</h1>
+
+	<form name="registrationForm" id="registrationForm" onsubmit="return validateForm()" action="studentFormSubmit.py" method="POST">
+
+	<div class="inputs"><!--Input classes are for CSS flexbox width purposes-->
+		<p>Student First Name: </p>
+		<input placeholder="John" type="text" name="firstName"><p id="fNameErr" class="warnOff">Cannot be empty!</p>
+	</div>
+
+	<div class="inputs">
+		<p>Student Last Name: </p>
+		<input placeholder="Smith" type="text" name="lastName"><p id="lNameErr" class="warnOff">Cannot be empty!</p>
+	</div>
+
+	<div class="inputs">
+		<p>Residential Address: </p>
+		<input  placeholder="Student Ville Ave 1 #01-001" class="resAddress" type="text" name="resAddress"><p id="resAddErr" class="warnOff">Cannot be empty!</p>
+	</div>
+
+	<div class="inputs">
+		<p>Phone No: </p>
+		<input  placeholder="00000000000" type="text" name="phoneNum"><p id="phoneErr" class="warnOff">Only digits!</p>
+	</div>
+
+	<div class="inputs">
+		<p>Gender: </p>
+		<input class="radio-text" type="radio" name="gender" value="male"> Male 
+		<input class="radio-text radio2-spacing" type="radio" name="gender" value="female"> Female
+		<p id="genderErr" class="warnOff">Please select one!</p>
+	</div>
+
+	<div class="inputs">
+		<p>Course: </p>
+		<select name="courseNames">
+                      %s <!-- String formatting for options can be found on studentform.py-->
+		</select>
+	</div>
+
+	<div class="inputs btns">
+		<input class="btn" type="submit" value="Save">
+		<button type="reset" id="clearButton" class="btn">Clear</button>		
+	</div><!--If type reset doesn't work, add onclick='clearForm()' (refer to JSform.js)-->
+
+	</form>
+</div>
+	
+</body>
+</html>
